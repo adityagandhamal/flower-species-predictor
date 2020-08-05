@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class='jumbotron text-center'>
+        <form action="{{url_for('prediction')}}" method="POST">
+            
+            <input type='text' name="sepallength" placeholder="sepal length" required="required">
+            <input type='text' name="sepalwidth" placeholder="sepal width" required="required">
+            <input type='text' name="petallength" placeholder="petal length" required="required">
+            <input type='text' name="petalwidth" placeholder="petal width" required="required">
+            
+        
+
+    </div>
+
+    <div class = "container">
+        <h3>Now its time to predict the Species of your flower!!</h3>
+        <p>Hit the Predict Button</p>
+    </div>
+
+    <div class='container'>
+
+            <input type="submit" value="predict the species">
+        </form>
+
+    </div>
+
+{% endblock %}

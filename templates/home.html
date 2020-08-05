@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="jumbotron text-center">
+        <p>
+            To experience, head over to the Application by clicking the tab below. 
+        </p>
+
+        <form action="{{url_for('application')}}" method="GET">
+            <input type="submit" value="Start Application">
+        </form>
+
+    </div>
+
+{% endblock %}
